@@ -99,6 +99,8 @@ pub struct LlvmLines {
     pub example: Option<String>,
     #[arg(long, value_name = "NAME", help_heading = TARGET_SELECTION)]
     pub test: Option<String>,
+    #[arg(long, help_heading = TARGET_SELECTION)]
+    pub tests: bool,
     #[arg(long, value_name = "NAME", help_heading = TARGET_SELECTION)]
     pub bench: Option<String>,
 
